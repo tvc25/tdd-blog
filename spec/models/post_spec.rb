@@ -15,6 +15,7 @@ describe Post do
     expect(post.valid?).to eq false
   end
 
+# Need to find out why this has to be comments.none
   context 'no posts' do
     it 'should return a message saying no posts' do
       expect(alberto_post.no_posts).to eq 'No posts yet!'

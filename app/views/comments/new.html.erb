@@ -1,0 +1,11 @@
+<%= form_for [@post, @comment] do |form| %>
+  
+  <%= form.label :author %>
+  <%= form.text_field :author %>
+
+  <%= form.label :remark %>
+  <%= form.text_field :remark %>
+
+  <%= form.submit 'Submit' %>
+
+  <% end %>
